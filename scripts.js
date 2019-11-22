@@ -115,15 +115,164 @@
 
 
 
-let profesor = 'alexys'
-console.log(profesor.indexOf('r'))
-console.log('Hola amigos'.indexOf('o'))
-console.log('Hola amigos'.indexOf('o',2))
-console.log('Hola amigos'.indexOf('o','Hola amigos'.indexOf('o')+1))
+// let profesor = 'alexys'
+// console.log(profesor.indexOf('r'))
+// console.log('Hola amigos'.indexOf('o'))
+// console.log('Hola amigos'.indexOf('o',2))
+// console.log('Hola amigos'.indexOf('o','Hola amigos'.indexOf('o')+1))
 
-console.log('Hola amigos'.lastIndexOf('o'))
+// console.log('Hola amigos'.lastIndexOf('o'))
 
-console.log('https://ed.team/blog'.includes('blog'))
+// console.log('https://ed.team/blog'.includes('blog'))
 
-console.log('https://ed.team/blog'.startsWith('https://ed.team'))
+// console.log('https://ed.team/blog'.startsWith('https://ed.team'))
 
+
+
+
+// if(3 === 5) console.log('Hola')
+// if(5>8) console.log('mundo')
+// console.log('JRomero')
+
+// if('a' === 'b') console.log('Me ejecuto')
+// let empresa = 'Jose Corp'
+// // SCOPE
+// if('b' === 'b'){
+//     console.log('Me ejecuto')
+//     console.log('Me ejecute nuevamente')
+//     console.log(empresa)
+// }
+// if(5 > 3){
+//     console.log('paso la condicion')
+// }else if(3 > 2){
+//     console.log('paso la condición 2')
+// }else if(10 > 2){
+//     console.log('paso la condición 3')
+// }
+// console.log('simpre me voy a ejecutar')
+
+
+
+// if (2 > 3 && 5 > 2) {
+//     console.log('pasó la condición')
+// }else if(4 > 10 || 3 > 2 ){
+//     console.log('pasó la condición 2')
+// }else if(10 > 2){
+//     console.log('pasó la condición 3')
+// }
+
+// if (4 > 3) {
+//     console.log('Paso la condicion 1')
+//     if(5 > 3){
+//         console.log('paso la condicion 1.1')
+//     }
+// }else if(3 > 2){
+//     console.log('paso la condicion 2')
+// }else if(10 > 2){
+//     console.log('paso la condicion 3')
+// }
+
+
+
+// let age = parseInt(prompt('Dime tu edad'),10)
+// if (age) {
+//     if(age >= 18){
+//         alert('Eres mayor de edad')
+//     }else{
+//         alert('Te faltan años')
+//     }
+// }else {
+//     age = parseInt(prompt('Tu edad debe ser un numero'),10)
+// }
+
+// let message = age >=18
+//                 ? 'Eres mayor de edad'
+//                 : 'Te faltan años'
+// alert(message)
+
+
+
+
+
+// let answer = prompt('Escoge un número del 1 al 3')
+// switch (answer) {
+//     case '1':
+//         alert('Eres timido')
+//         break
+//     case '2':
+//         alert('Eres extrovertido')
+//         break
+//     case '3':
+//         alert('Eres muy feliz')
+//         break
+//     default:
+//         alert('Por favor escribe un numero del 1 al 3')
+//         break;
+// }
+
+// let answer = prompt(`La capital de colombia es:
+// a. Bogotá
+// b. Lima
+// c. Madrid
+// d. Mexico
+// e. La Paz
+// `).toUpperCase().trim()
+// switch (answer) {
+//     case 'A':
+//         alert('¡Correcto!')
+//         break
+//     case 'B':
+//         alert('Te equivocaste. Lima es la capital de Perú')
+//         break
+//     case 'C':
+//         alert('Te equivocaste. Madrid es la capital de España')
+//         break
+//     case 'D':
+//         alert('Te equivocaste. Mexico es la capital de Mexico')
+//         break    
+//     case 'E':
+//         alert('Te equivocaste. La Paz es la capital de Bolivia')
+//         break
+//     default:
+//         alert('Ingrese una respuesta entre a - e')
+//         break
+// }
+
+
+
+
+// for (let i = 1; i <= 100; i++) {
+//     if(i % 7 === 0) console.log(i)
+//     if(i % 5 === 0) console.log(i)
+// }
+
+// let n = 0
+// for (let i = 1; i <= 100; i++) {
+//     // if(i % 7 === 0) continue
+//     // console.log(i)
+
+//     // if(i % 5 === 0 || i % 2 === 0) {
+//     //     continue
+//     // } else {
+//     //     console.log(i)
+//     // }
+
+//     if(i % 7 === 0){
+//         console.log(i)
+//         n++
+//     }
+//     if (n >= 5) break
+// }
+
+
+
+// let i = 10
+// while (i--) {
+//     console.log(i)
+// }
+
+let password = 'JRomero'
+let pass
+do{
+    pass = prompt('Ingrese la contraseña')
+}while (pass !== password)
