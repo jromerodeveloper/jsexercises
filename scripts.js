@@ -271,8 +271,221 @@
 //     console.log(i)
 // }
 
-let password = 'JRomero'
-let pass
-do{
-    pass = prompt('Ingrese la contraseña')
-}while (pass !== password)
+// let password = 'JRomero'
+// let pass
+// do{
+//     pass = prompt('Ingrese la contraseña')
+// }while (pass !== password)
+
+
+
+
+
+// function saludar(persona,sexo) {
+//     let saludo = sexo === 'm'
+//                         ?`Bienvenido`
+//                         :`Bienvenida`
+//     return `${saludo} al mundo de la programación ${persona}`
+// }
+// console.log(saludar('Jose','m'))
+// console.log(saludar('Francisco','m'))
+// console.log(saludar('Maria','f'))
+
+// const saludar = (persona = 'visitante',sexo = 'm') => {
+//     let saludo = sexo === 'm'
+//                           ? `Bienvenido`
+//                           : `Bienvenida`
+//     return `${saludo} al mundo de la programación ${persona}`
+// }
+// console.log(saludar('Francisco'))
+// console.log(saludar('Maria','f'))
+// console.log(saludar())
+
+// const sumar = (a,b) => a + b
+// console.log(sumar(2,5))
+// console.log(sumar(10,10))
+
+// const sumarTodos = (...numeros) => {
+//     let resultado = 0
+//     for (let i = 0; i < numeros.length; i++) {
+//         resultado += numeros[i]
+//     }
+//     return resultado
+// }
+// console.log(sumarTodos(1,2,35,4,5,6,7))
+
+
+
+
+const c = console.log
+// const c = console.log()
+// const multiplicar = (a,b) => a * b
+// console.log(c)
+// c(multiplicar(3,4))
+// let edad = multiplicar(5,4)
+// let edad2 = multiplicar(edad,2)
+// let edad3 = multiplicar(multiplicar(5,4),2)
+// c(edad)
+// c(edad2)
+// c(edad3)
+
+// function sumar(x){
+//     return function(y){
+//         return x + y
+//     }
+// }
+// const sumar = x => y => x + y
+// // closures
+// c(sumar(10)(20))
+
+// const doSomething = x => y => x * y
+// const a = doSomething(2)(2)
+// const b = doSomething(3)
+// c(doSomething(a)(b(3)))
+
+
+
+
+let a = 'Hola'
+// const saludo = persona => {
+//     a = a + ' ' + persona
+//     return a
+// }
+// c(saludo(a,'Francisco'))
+// c(a)
+
+// const saludar = (saludo,persona) => `${saludo} ${persona}`
+// c(saludar(a,'Francisco'))
+// c(a)
+
+// const saludar = ((saludo,persona) => `${saludo} ${persona}`)(a,'Jose')
+// c(saludar)
+
+// setTimeout(() => {
+//     alert('Hola amigos')
+// }, 3000)
+
+
+
+
+// {
+//     let profesor = 'Jose Romero'
+//     {
+//         c(profesor)
+//     }
+// }
+// c(profesor)
+
+
+
+
+// function sumar(x){
+//     return function(y){
+//         return x + y
+//     }
+// }
+// c(sumar(2)(3))
+
+// function aumentar () {
+//     let numero = 0
+//     return function () {
+//         numero++
+//         c(numero)
+//     }
+// }
+// aumentar()()
+// const incrementar = aumentar()
+// incrementar()
+// incrementar()
+// incrementar()
+// incrementar()
+
+// let numero = 0
+// function aumentar () {
+//     numero++
+//     c(numero)
+// }
+// aumentar()
+// aumentar()
+// aumentar()
+// aumentar()
+// aumentar()
+
+
+
+
+// let edad = 5
+// let user = {
+//     nombre: 'Jose',
+//     edad: 27,
+//     getEdad() {
+//         c(this.edad)
+//         c(edad)
+//     }
+// }
+// user.getEdad()
+
+
+
+
+// let array = ['hola', 2, true, undefined, [1,2,3,4], {}, 'final']
+// c(array)
+// c(array[4])
+// c(array[5])
+// c(array[0])
+// c(array[array.length - 1])
+
+// let arr5 = ['Bienvenido', 'de nuevo', 'Jose', 'Romero']
+// let[s1, s2, s3, s4] = arr5
+// c(s1)
+// c(s2)
+// c(s3)
+// c(s4)
+
+
+
+
+
+// let arr = [1,2,3,4]
+// arr.push(5)
+// c(arr)
+// c(arr.pop())
+// c(arr)
+// c(arr.unshift('Nuevo'))
+// c(arr)
+// c(arr.shift())
+// c(arr)
+
+// let arr = ['Peru','Colombia','Mexico','Bolivia']
+// c(arr)
+// c(arr.splice(2,0,'Chile','Ecuador'))
+// c(arr)
+// c(arr.splice(4,1,'Costa Rica'))
+// c(arr)
+// c(arr.splice(1,1))
+// c(arr)
+
+// c(arr.slice(2,4))
+// c(arr)
+
+
+
+
+
+// let text = 'Hola mamá'
+// c(text.split(''))
+// c(text.split('').reverse())
+// c(text.split('').reverse().join(''))
+
+// const reverseText = string => string.split('').reverse().join('')
+// c(reverseText('Hola mundo'))
+// c(reverseText('JavaScript'))
+// c(reverseText('Todo lo que se hace con esfuerzo tarde o temprano funcionara'))
+
+let arr2 = ['K','W','P','R','A','M','G','E']
+c(arr2.sort())
+c(arr2.sort().reverse())
+let numbers = [10,300,45,20,58,750,1000,64,5]
+c(numbers)
+c(numbers.sort())
+c(numbers.sort((a,b) => a - b))
