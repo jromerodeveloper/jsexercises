@@ -482,10 +482,179 @@ let a = 'Hola'
 // c(reverseText('JavaScript'))
 // c(reverseText('Todo lo que se hace con esfuerzo tarde o temprano funcionara'))
 
-let arr2 = ['K','W','P','R','A','M','G','E']
-c(arr2.sort())
-c(arr2.sort().reverse())
-let numbers = [10,300,45,20,58,750,1000,64,5]
-c(numbers)
-c(numbers.sort())
-c(numbers.sort((a,b) => a - b))
+// let arr2 = ['K','W','P','R','A','M','G','E']
+// c(arr2.sort())
+// c(arr2.sort().reverse())
+// let numbers = [10,300,45,20,58,750,1000,64,5]
+// c(numbers)
+// c(numbers.sort())
+// c(numbers.sort((a,b) => a - b))
+
+// c(numbers.join(' '))
+// c(numbers.join(','))
+// let numbers2 = [254,2728,25,9,63]
+// c(numbers.concat(numbers2)) 
+// c(numbers.concat(88,66,44))
+
+// c(numbers.indexOf(300))
+// c(numbers)
+
+// c(numbers.find(number => number > 100))
+
+// c(numbers.findIndex(number => number > 100))
+
+
+
+
+
+
+
+// c(numbers.push(10))
+// c(numbers)
+// c(new Set(numbers))
+// c([...new Set(numbers)])
+// const removeDuplicates = arr => [...new Set(arr)]
+// c(removeDuplicates(['a','b','a','c']))
+
+// c(Math.min(10,20,30,1))
+// c(Math.max(10,20,30,1))
+// let numbers3 = [10,20,30,1]
+// c(Math.min(numbers3))
+// c(Math.max(numbers3))
+// c(Math.min(...numbers3))
+// c(Math.max(...numbers3))
+
+
+
+
+
+
+
+// let arr = ['a','b','c','d','e','f']
+// for(let i = 0; i < arr.length; i++){
+//     c(arr[i])
+// }
+
+// for(let element of arr){
+//     c(element)
+// }
+// let teachers = ['Jose','Francisco','Romero','Zegarra']
+// for(let teacher of teachers ){
+//     c(teacher)
+// }
+// teachers.forEach((el,i) => {
+//     c(el)
+//     c(i)
+// })
+// teachers.forEach((el,i,arr) => {
+//     c(el)
+//     c(i)
+//     c(arr)
+// })
+// let arr2 = []
+// let numbers4 = [12,467,32,896,56,78,39,63]
+// numbers4.forEach(el => {
+//     arr2.push(el * el)
+// })
+// c(arr2)
+// c(teachers.some(el => el === 'Pedro'))
+// c(teachers.every(el => el.includes('a')))
+// c(teachers.every(el => el.length >= 3))
+
+// c(numbers4.map(el => el * el))
+// c(numbers4.filter(el => el > 100))
+// c(numbers4.reduce((a,b) => a + b))
+
+
+
+
+
+
+
+
+let perro = {
+    nombre: 'Boby',
+    edad: 3,
+    color: 'negro',
+    sexo: 'macho',
+    vacunas: true,
+    correr(){
+        c(`${this.nombre} corre`)
+    }
+}
+// c(perro)
+// c(perro.nombre)
+// c(perro.edad)
+// c(perro.color)
+// c(perro.sexo)
+// c(perro.vacunas)
+// c(perro.correr())
+
+// let user = {
+//     nombre: 'Jose',
+//     'ape-llido': 'Romero'
+// }
+// c(user.nombre)
+// c(user['ape-llido'])
+// c(user['nombre'])
+
+// let x = 'Hola', y = 'mundo'
+// let saludo = {
+//     [x + y]: 'Mi primer hola mundo'
+// }
+// c(saludo)
+// let myObject = {
+//     a: x,
+//     b: y
+// }
+// c(myObject)
+
+// delete perro.edad
+// c(perro)
+// perro.edad = 5
+// c(perro)
+// perro['feliz'] = true
+
+// let amigo = 'Francisco'
+// c(Object.getPrototypeOf(amigo))
+// let amigo2 = new String('Jose')
+// c(amigo2)
+
+// c('sexo' in perro)
+// c('vacunas' in perro)
+// c('vacuna' in perro)
+// c('adiestrado' in perro)
+// for(let property in perro){
+//     c(property)
+// }
+
+// Object.prototype.patas = 4
+// for(let property in perro){
+//     c(property)
+// }
+// for(let property in perro){
+//     if(perro.hasOwnProperty(property))
+//         c(property)
+// }
+
+// let varA = 'hola'
+// let varB = varA.toUpperCase()
+// c(varA)
+// c(varB)
+
+// let otroPerro = perro
+// c(otroPerro)
+// otroPerro.patas = 4
+// c(perro)
+// let perro2 = Object.assign({},perro)
+// c(perro2)
+// perro2.orejas = 'largas'
+// c(perro)
+// c(perro2)
+
+// for(let property in perro){
+//     c(property)
+// }
+c(Object.entries(perro))
+c(Object.keys(perro))
+c(Object.values(perro))
